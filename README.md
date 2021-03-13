@@ -1,3 +1,13 @@
+# OpenHackU_vol_4_ID15
+焼肉焼いたら家焼けたbot  
+  
+「焼肉焼いたら家焼けたbot」はヤフー株式会社主催のイベント「Hack U」にて企画・開発を行った言葉遊びbotです。  
+  
+- [遊び方ガイド ](https://note.com/roast_official/n/ndc7d00f38d44)  
+  
+  
+----------------------------------------------------------------------
+
 ## 環境設定  
 - ディレクトリ構成  
 ├── main.py(channelIDなどはherokuの環境変数としておいている)  
@@ -12,8 +22,6 @@
 ```$ heroku config:set YOUR_CHANNEL_ACCESS_TOKEN="アクセストークンの文字列" --app アプリ名```  
 
 - 補足 Herokuにデプロイ後、Config Varsで設定するのでもOK  
-![2021-03-06 (6)_LI](https://user-images.githubusercontent.com/60646787/110207635-25f05b00-7ec8-11eb-8a3b-1eb64a287c11.jpg)
-  
   
 ## 新しい Heroku アプリの作成  
 ```$ heroku create アプリ名```  
@@ -29,19 +37,20 @@
   
 ```
 Username for 'https://github.com': メールアドレス  
-Password for 'https://yud0uhu@github.com': **AccountにあるAPI Key**  
+Password for 'https://yud0uhu@github.com': <b>AccountにあるAPI Key</b>  
 ```
   
-- GitHubに(個人用ブランチを切って)pushする  
+GitHubに(個人用ブランチを切って)pushする  
 ```$ git checkout -b ブランチ名```  
 ```$ git push origin ブランチ名```  
   
-## エラー対処  
+##エラー対処  
 ```git push heroku```で  
-```$ \linebot>git push heroku   
-fatal: 'heroku' does not appear to be a git repository  
-fatal: Could not read from remote repository.  
-  
+```$ \linebot>git push heroku```  
+```fatal: 'heroku' does not appear to be a git repository```  
+```fatal: Could not read from remote repository.```  
+ 
+```
 Please make sure you have the correct access rights  
 and the repository exists.  
 ```
@@ -67,4 +76,3 @@ https://github.com/line/line-bot-sdk-python
 - (WSL)herokuコマンドには**sudo**が必要  
 - http://smot93516.hatenablog.jp/entry/2018/10/09/115933  
 - https://reasonable-code.com/heroku-config/ (Herokuで環境変数を確認・設定・削除する方法)  
-- https://qiita.com/wroc/items/d15b1015c899b0cf77da (Herokuにmasterブランチ以外をdeployする方法)
