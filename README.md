@@ -72,7 +72,3 @@ https://devcenter.heroku.com/ja/articles/git (Heroku公式/Gitを使用したデ
 ## 公式SDK  
 https://github.com/line/line-bot-sdk-python  
   
-## 自分用メモ
-- (WSL)herokuコマンドには**sudo**が必要  
-- http://smot93516.hatenablog.jp/entry/2018/10/09/115933  
-- https://reasonable-code.com/heroku-config/ (Herokuで環境変数を確認・設定・削除する方法)  
